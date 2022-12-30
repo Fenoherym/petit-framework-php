@@ -1,0 +1,10 @@
+{% extends "template/app.twig" %}
+
+{% block content %}
+    <h3>Listes des nouvelles {{ test }}</h3>
+    {% for key, new in news %}
+    <h3>{{ new.titre }}</h3>
+    <p>{{ new.contenu }}</p>
+    {% endfor %}
+{% endblock %}
+    
